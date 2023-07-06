@@ -1,0 +1,122 @@
+body {
+	background: linear-gradient(-45deg, #308191, #e73c7e, #341146, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.cover-photo {
+    background-image: url('/images/cover\ \ photo.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #705f4a; */
+    height: 60vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cover-section {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.237);
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+
+
+.cover-subheading {
+    font-family: 'Mrs Saint Delafield', cursive;
+    background-color: rgba(0, 0, 0, 0.215);
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+.get-started-button {
+    /* margin-top: 3rem; */
+    font-family: 'Open Sans', sans-serif;
+    width: 150px;
+    font-size: 20px;
+    /* font-size: 5rem; */
+    border-radius: 10px;
+    background-color: #00ADB5;
+    text-align: center;
+    transition: all 0.5s ease;
+
+
+}
+
+.get-started-button:hover{
+    background-color: #2ebe85;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+@media screen and (max-width:1200px) {
+}
+@media screen and (max-width:1000px) {
+}
+@media screen and (max-width:800px) {
+    .cover-subheading{
+    font-size: 4rem;
+    }
+    .cover-photo{
+        height: 70vh !important;
+        background-size: 140%;
+    }
+    .dissapear{
+        display: none;
+    }
+    .cards_container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin:0px auto;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .cover-photo{
+        background-size: 180%;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .cover-subheading{
+        font-size: 3rem;
+    }
+    .cover-photo{
+        background-size: 220%;
+    }
+}
+@media screen and (max-width:300px) {
+}
+

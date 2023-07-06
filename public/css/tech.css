@@ -1,0 +1,80 @@
+
+h1 {
+  text-align: center;
+  padding-top: 90px;
+  color:white;
+}
+
+.face {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+  transform: translateY(140px);
+}
+
+.face2 {
+  background: rgba(180, 179, 179, 0.447);
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transform: translateY(-160px);
+}
+
+.cardi:hover .face.face1 {
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+}
+
+.inner{
+  text-align: center;
+}
+.outer {
+  opacity: .3;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.cardi:hover .outer {
+  opacity: 1;
+}
+
+.cardi:hover .face.face2 {
+  transform: translateY(0);
+}
+
+#change {
+  padding-top: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.title {
+  position: absolute;
+  top: 135px;
+  padding-left: 30px;
+  color: #000000;
+  text-align: center;
+  
+}

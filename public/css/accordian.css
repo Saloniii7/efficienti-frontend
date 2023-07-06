@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.wrapper{
+    max-width: 760px;
+    padding: 20px 20px
+}
+
+/* .wrapper .accordion-button{
+    font-size: 0.9rem;
+    font-weight: 500
+} */
+/* .wrapper .accordion-button:hover{
+    background-color: #f8f8f8
+}
+.wrapper .accordion-button:focus{
+    box-shadow: none
+} */
+/* .wrapper .accordion-button::after{
+    background-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c8c8c8;
+    background-position: center center;
+    border-radius: 50% 
+}
+ .wrapper .accordion-button:not(.collapsed){
+    color: #000;
+    background-color: #f7f7f7;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd !important
+}
+ .accordion-button:not(.collapsed)::after{
+    border-color: #1E88E5
+}
+.wrapper .accordion-button.collapsed{
+    border-bottom: 1px solid #ddd !important
+}
+.wrapper .accordion-collapse.show{
+    border-bottom: 1px solid #ddd !important
+}
+.wrapper .accordion-collapse{
+    background-color: #eaf3fa
+}
+.wrapper .accordion-collapse ul li{
+    line-height: 2rem;
+    width: 100%;
+    padding: 0.5rem 1.3rem
+}
+.wrapper .accordion-collapse ul li:hover{
+    background-color: #c9e7ff
+}
+.wrapper .accordion-collapse ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 400;
+    display: block
+}
+.wrapper .accordion-collapse ul li:hover a{
+    color: #222
+} */
+@media (max-width: 777px){
+    .wrapper{
+        margin: 50px 20px
+    }
+}
+@media (max-width: 365px){
+    .wrapper{
+        margin: 50px 10px
+    }
+    .w-75{
+        width: 90% !important
+    }
+}

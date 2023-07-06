@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    
+    <title>EFFICIENTI</title>
+</head>
+<body id="body-pd">
+    <div class="header1">
+        <div class="progress-container1">
+            <div class="progress-bar1" id="myBar1"></div>
+        </div>
+    </div>
+ 
+    <header class="header" id="header">
+      <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+      <!-- <div class="header_img">Login</div> -->
+      <% if(!curruser){ %>
+      <a href="/login" class="header_img">Login</a>
+      <% } else { %>
+        <a href="/logout" class="header_img">Logout</a>
+        <% } %>
+  </header>
+  <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+          <div> <a href="/" class="nav_logo"><i class="fas fa-gem"></i><span class="nav_logo-name">EFFICIENTI</span> </a>
+            
+              <div class="nav_list">
+                <a href="/home" class="nav_link"> <i class="fas fa-home "></i> <span class="nav_name">Home</span> </a> 
+                 <a href="/dashboard" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> 
+                 <a href="/efficienti" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Your efficienti</span> </a> 
+                 <a href="/tasks" class="nav_link"> <i class="fa-solid fa-list-check"></i> <span class="nav_name">Task Scheduler</span> </a> 
+                 <a href="/productivity" class="nav_link"> <i class="fa-regular fa-lightbulb"></i> <span class="nav_name">Boost Producitivity</span> </a> 
+                </div>
+          </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+      </nav>
+  </div>
+  <!--Container Main start-->
+  <div class="height-100 bg-light main-start">
+            <%-body%>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+    <script src="js/progress.js"></script>
+    <script src="https://kit.fontawesome.com/30e3328d96.js" crossorigin="anonymous"></script>
+    <script src="/js/utility.js"></script>
+</body>
+</html>

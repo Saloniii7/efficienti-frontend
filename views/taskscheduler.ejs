@@ -1,0 +1,103 @@
+<%layout('boilerplate')%>
+<link rel="stylesheet" href="/css/procastination.css">
+
+
+<% if(success &&success.length){ %>
+ 
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <%=success%>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% } %>
+      <% if(error &&error.length){ %>
+          
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <%=error%>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          <% } %>
+
+    <div class="container" >
+      <!-- START OF 1 CARD ROW  -->
+      <div class="row mt-3 d-flex justify-content-center">
+        <div class="col-md-6">
+          <!-- 1 of 3 -->
+          <div class="container" >
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="card text-center col-4 mt-5 col-sm-10 p-0 text-info">
+                <div class="card-body ">
+                  <h5 class="card-title ">Add Task -> <button type="button" class="btn btn-info">+</button></h5>
+                </div>
+               
+              </div>
+      
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <!-- END OF ONE CARD ROW  -->
+
+    <!-- START OF ACTUAL CARD ROW  -->
+      <div class="row mt-3 d-flex justify-content-center">
+
+              <div class="card text-center col-md-4 mt-5 p-0 me-4">
+              <form action="/tasks" method="post">
+                <div class="card-body"style="color: grey;">
+                  <h5 class="card-title">Task: </h5>
+                  <p class="card-text">
+                
+                    <div class="row">
+                      <div class="col">
+                        
+                        <input type="text" name="task" class="form-control m-1" placeholder="Input Task">
+                        
+                      </div>
+                    </div>
+                 </p>
+                  <div class="card-body"style="color: grey;">
+                    <h5 class="card-title">Deadline</h5>
+                    <p class="card-text">In Hours : 23 (for 11 pm)</p>
+                    <p class="card-text">
+                      <div class="row">
+                        <div class="col">
+                          <input type="number" name="starttime" class="form-control m-1" max="24" min="0" placeholder="Start time">
+                          <input type="number" name="deadline" class="form-control m-1" max="24" min="0" placeholder="Input Deadline">
+                        </div>
+                      </div>
+                  </p>
+        
+                  </div>
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+      
+                </div>
+                
+               
+              </div>
+              <div class="card text-center col-md-4 mt-5 p-0">
+               
+                <div class="card-body"style="color: grey;">
+                  <h5 class="card-title">Completion Time</h5>
+                  <p class="card-text">Days= 0, Time= 2  (for 2 am)</p>
+                  <p class="card-text"><form>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control m-1" placeholder="S.no">
+                        <input type="text" class="form-control m-1" placeholder="Input Time">
+                        <input type="text" class="form-control m-1" placeholder="Days">
+                      </div>
+                    </div>
+                  </form></p>
+                  <p class="card-text"><button type="button" class="btn btn-info">Submit</button></p>
+                  <p class="card-text">Points Awarded= <p style="color: blueviolet;">0.4</p>(Dealine- Completion Time) /100</p>
+                  
+      
+                </div>
+               
+              </div>
+     
+        </div>
+       

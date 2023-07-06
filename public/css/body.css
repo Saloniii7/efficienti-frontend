@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient(-45deg, #308191, #e73c7e, #341146, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

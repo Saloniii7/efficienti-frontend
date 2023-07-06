@@ -1,0 +1,25 @@
+.home_container{
+    color:white;
+}
+
+.home_card{
+    background-color:rgba(0, 0, 0, 0.353);
+    box-shadow: 5px 5px 25px black;
+    border-top:2px solid orange;
+    border-bottom:2px solid green;
+    text-align: center;
+}
+.card-title{
+    margin-bottom:19px;
+}
+.card-link:hover{
+    color:rgb(29, 158, 251);
+}
+.home_help{
+    background-color:#222831;
+    color:white;
+}
+.home_help_body{
+    background-color: #393E46;
+    color:white;
+}

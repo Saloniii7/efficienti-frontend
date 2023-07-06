@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+
+.navbar{
+    background-color: #EEEEEE;
+    /* background-color: #5c4435; */
+}
+.cover-heading {
+  /* background-color: rgba(0, 0, 0, 0.299); */
+  /* padding: 1rem; */
+  
+  font-family: 'Mrs Saint Delafield', cursive;
+  /* font-size:8rem; */
+  text-align: center;
+  width: 30%;
+}
+
+
+/* to make horizontal PROGRESS BAR*/
+.header1 {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container1 {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar1 {
+    height: 8px;
+    background: #535353;
+    width: 0%;
+  }
+/* Progress BAR ends*/
+
+
+/* to hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+/* FLIPPING CARDS */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 5px solid #000000;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 30px; */
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 25px; */
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #393E46;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #00ADB5;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* FLIP CARD ENDS  */
+
+
+/* FORM EDITING  */
+
+
+input[type="text"], textarea {
+
+  border: none;
+  background-color : #d3cdcd; 
+
+}
+
+
